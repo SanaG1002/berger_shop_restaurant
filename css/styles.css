@@ -1,0 +1,748 @@
+/*-------------------- Propriétés générales-------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #c7b793;
+    font-size: 18px;
+    background-color: #060506;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-family: 'Grape Nuts', cursive;
+    color: #e5ac51;
+}
+
+h3 {
+    font-size: 1.8em;
+    font-family: 'Grape Nuts', cursive;
+    color: #e5ac51;
+}
+
+
+
+/* Button */
+#app-menu-bergers a,
+#app-menu-beignes a,
+#app-shop-section a {
+    text-decoration: none;
+    border: 1px solid #e5ac51;
+    color: #e5ac51;
+    padding: 10px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#app-menu-bergers a:hover,
+#app-menu-beignes a:hover,
+#app-shop-section a:hover {
+    color: #060506;
+    background-color: #e5ac51;
+}
+
+
+
+/* Header */
+header {
+    background-color: #060506;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #c7b793;
+    font-weight: 600;
+    font-size: 50px;
+    font-family: 'Grape Nuts', cursive;
+}
+
+nav a:hover {
+    color: #d13743;
+}
+
+.app-header-position {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.app-header-position a {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+.app-logo {
+    width: 200px;
+}
+
+.app-logo-link {
+    width: 200px;
+    margin: 0.67em 0;
+}
+
+.app-header-btn {
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+    background-color: #9d2932;
+    color: #e5ac51;
+}
+
+.app-header-btn:hover {
+    background-color: #e5ac51;
+    color: #752027;
+}
+
+.app-header-btn-active {
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+    background-color: #e5ac51;
+    color: #752027 !important;
+}
+
+.app-icon-menu {
+    height: 50%;
+    padding: 20px;
+}
+
+.app-menu-selection a {
+    color: #d13743;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #9d2932;
+}
+
+.app-footer-burger-shop {
+    color: #c7b793;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.app-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    color: #9d2932;
+}
+
+.app-link-btn-contact-us {
+    text-decoration: none;
+    color: #c7b793;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #c7b793;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.app-link-btn-contact-us:hover {
+    background-color: #c7b793;
+    color: #9d2932;
+}
+
+
+
+/* Section shop */
+#app-shop-section {
+    background: linear-gradient(45deg, #f0f07c 5%, #e5ac51 60%);
+    color: #060506;
+}
+
+#app-shop-section h2 {
+    color: #060506;
+}
+
+#app-shop-section a {
+    color: #060506;
+    border: 1px solid #060506;
+}
+
+#app-shop-section a:hover {
+    background-color: #060506;
+    color: #e5ac51;
+}
+
+.app-shop-element-section {
+    display: flex;
+    padding-top: 20px;
+}
+
+#app-shop-section p {
+    margin-bottom: 25px;
+}
+
+
+
+/*-------------------- Page d'accueil/Menu-------------------- */
+
+/* Page */
+#app-menu-page span {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Section menu */
+#app-menu-section {
+    width: 100%;
+}
+
+.app-menu-img {
+    width: 100%;
+    border-radius: 200px 200px 200px 200px;
+    border: 5px solid #05b2f7;
+}
+
+#app-menu-bergers,
+#app-menu-beignes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px 0rem;
+    grid-template-areas:
+        "a b c d"
+        ". e f .";
+}
+
+.app-menu-bloc1 {
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-menu-bloc2 {
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-menu-bloc3 {
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-menu-bloc4 {
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-menu-bloc5 {
+    grid-area: e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-menu-bloc6 {
+    grid-area: f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/*-------------------- Page de reservation-------------------- */
+
+/* Page */
+.app-reservation-page {
+    background-color: #060506;
+}
+
+
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 16px;
+}
+
+form span {
+    color: red;
+}
+
+fieldset {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px;
+    border: 2px solid #05b2f7;
+    height: 430px;
+}
+
+fieldset input {
+    margin-bottom: 20px;
+    width: 60%;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: 600;
+    color: #05b2f7;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    display: block;
+    resize: vertical;
+    overflow: auto;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: #f1ece0;
+}
+
+.app-form-checkbox {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.app-form-submit {
+    text-decoration: none;
+    border: 1px solid #e5ac51;
+    color: #e5ac51;
+    background-color: #060506;
+    padding: 10px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.app-form-submit:hover {
+    color: #060506;
+    background-color: #e5ac51;
+    cursor: pointer;
+}
+
+.app-form-reservation-bloc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 80%;
+}
+
+.app-form-reservation-number {
+    width: 50px;
+}
+
+.app-form-reservation-bloc-date {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+.app-form-reservation-date {
+    width: 130px;
+    margin-right: 20px;
+}
+
+.app-form-reservation-radio {
+    margin-bottom: 10px;
+    width: 5%;
+}
+
+.app-form-reservation-bloc-footer {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;
+}
+
+
+
+/*-------------------- Page de confirmation de reservation-------------------- */
+
+/* Page */
+.app-conf-reservation {
+    background-color: black;
+}
+
+.app-conf-reservation-text {
+    color: #d13743;
+    text-align: center;
+    padding: 300px;
+}
+
+
+
+/*-------------------- Page restaurant-------------------- */
+
+/* Page */
+.app-restaurant-img-blocs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px 0rem;
+    grid-template-areas:
+        "a a b"
+        "a a c"
+        "d f f"
+        "e f f";
+    margin-bottom: 100px;
+}
+
+.app-resto-img1 {
+    grid-area: a;
+}
+
+.app-resto-img2 {
+    grid-area: b;
+}
+
+.app-resto-img3 {
+    grid-area: c;
+}
+
+.app-resto-img4 {
+    grid-area: d;
+}
+
+.app-resto-img5 {
+    grid-area: e;
+}
+
+.app-resto-img6 {
+    grid-area: f;
+
+}
+
+
+
+/*-------------------- Page de commande-------------------- */
+
+/* Section commande */
+article li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#app-order-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.app-order-first-level {
+    padding-left: 0px;
+    margin-top: 0;
+}
+
+.app-order-second-level {
+    width: 100%;
+}
+
+.app-order-second-level-list {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+}
+
+.app-order-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.app-order-icone-img {
+    width: 18px;
+    margin: 5px;
+}
+
+
+
+/* Partie detail de commande */
+aside {
+    width: 30%;
+    float: right;
+    padding: 25px;
+    background-color: #9d2932;
+    color: #c7b793;
+}
+
+.app-order-aside-btn {
+    text-decoration: none;
+    border: 1px solid #e5ac51;
+    color: #e5ac51;
+    padding: 10px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.app-order-aside-btn:hover {
+    background-color: #e5ac51;
+    color: #9d2932;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.app-order-type-bloc {
+    width: 65%;
+}
+
+.app-order-aside {
+    padding-left: 0px;
+    margin: 0;
+}
+
+.app-order-aside-title {
+    margin: 0;
+}
+
+.app-order-aside-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/*-------------------- MEDIA QUERIES-------------------- */
+
+/* MEDIA QUERIES : icone  */
+@media screen and (min-width: 960px) {
+    .app-icon-menu {
+        display: none;
+        width: 100px;
+    }
+}
+
+
+
+/* MEDIA QUERIES : 960px*/
+@media screen and (max-width: 960px) {
+    body {
+        font-size: 14px;
+    }
+
+    h2,
+    h3 {
+        text-align: center;
+    }
+
+    aside {
+        width: 100%;
+        margin: 0;
+    }
+
+    fieldset {
+        height: auto;
+    }
+
+    fieldset input {
+        width: 100%;
+    }
+
+    .app-shop-element-section {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .app-shop-section img {
+        margin: 0;
+    }
+
+    .app-shop-element-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .app-shop-element-text p {
+        text-align: center;
+    }
+
+    #app-shop-section h2 {
+        margin-bottom: -10px;
+    }
+
+    .app-form-reservation-bloc-date {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    #app-main-nav li {
+        display: none;
+    }
+
+    .app-form-reservation-bloc {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .app-form-reservation-bloc {
+        width: 100%;
+    }
+
+    #app-menu-bergers,
+    #app-menu-beignes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 20px;
+        grid-template-areas:
+            "a b"
+            "c d"
+            "e f";
+    }
+
+    .app-menu-img {
+        width: 70%;
+    }
+
+    .app-restaurant-img-blocs {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0px 0rem;
+        grid-template-areas:
+            "a a a a"
+            "a a a a"
+            "b b c c"
+            "b b c c"
+            "d d e e"
+            "d d e e"
+            "f f f f "
+            "f f f f";
+        margin-bottom: 100px;
+    }
+
+    #app-order-article {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .app-order-type-bloc {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+/* MEDIA QUERIES : small size - 570px*/
+@media screen and (max-width: 570px) {
+    #app-menu-bergers,
+    #app-menu-beignes {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px 20px;
+        grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f";
+    }
+
+    .app-menu-img {
+        width: 50%;
+    }
+
+    fieldset {
+        height: auto;
+    }
+
+    fieldset input {
+        width: 100%;
+    }
+
+    .app-form-reservation-bloc-date {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    h2,
+    h3 {
+        text-align: center;
+    }
+
+    #app-order-article {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    aside {
+        width: 100%;
+        margin: 0;
+    }
+
+    #app-main-nav li {
+        display: none;
+    }
+
+    .app-order-type-bloc {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .app-shop-element-text p {
+        text-align: center;
+    }
+}
+
+
+
+/* MEDIA QUERIES : impression */
+@media print {
+
+    header,
+    footer {
+        display: none;
+    }
+}

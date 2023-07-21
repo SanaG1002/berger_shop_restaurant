@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Ma commande - Restaurant Burger shop </title>
+
+	<meta name="description" content="TP3 - Page de commande du site restaurant Burger Shop">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="favicon.ico">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Section entête -->
+	<header>
+		<div class="container">
+			<!-- Logo enterprise -->
+			<div class="app-header-position">
+				<a href="index.html">
+
+					<img class="app-logo" src="img/logo-burger-shop.png" alt="Logo restaurant Burger Shop">
+				</a>
+				<!-- Menu navigation -->
+				<nav id="app-main-nav">
+					<ul>
+						<li><a href="index.html">Menu</a></li>
+						<li><a href="reservation.html">Réservation</a></li>
+						<li><a href="restaurant.html">Restaurant</a></li>
+						<li><a class="app-header-btn-active" href="ma-commande.html">Ma commande</a></li>
+					</ul>
+				</nav>
+				<img class="app-icon-menu" src="img/icon-menu.png" alt="Icone de menu">
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<!-- Section de commande -->
+		<section id="app-order-section">
+			<div class="container">
+				<h2>Ma commande</h2>
+
+				<article id="app-order-article">
+					<div class="app-order-type-bloc">
+
+						<!-- Iteme de commande 1er niveau : burgers -->
+						<ul class="app-order-first-level ">
+							<li>
+								<img class="app-order-icone-img" src="img/icon-fleche-fonce.png" alt="Icone fleche">
+								<h3 class="app-order-title">Burgers</h3>
+							</li>
+							<li>
+								<!-- Iteme de commande 2eme niveau : liste commandees -->
+								<ul class="app-order-second-level">
+									<li class="app-order-second-level-list">
+										<p>Le commodo | 9,99$</p>
+										<p> Quantite : 1</p>
+									</li>
+									<li class="app-order-second-level-list">
+										<p>Le commodo | 9,99$</p>
+										<p> Quantite : 1</p>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+						<!-- Iteme de commande 1er niveau : beignes -->
+						<ul class="app-order-first-level ">
+							<li>
+								<img class="app-order-icone-img" src="img/icon-fleche-fonce.png" alt="Icone fleche">
+								<h3 class="app-order-title">Beignes</h3>
+							</li>
+							<li>
+								<!-- Iteme de commande 2eme niveau : liste commandees -->
+								<ul class="app-order-second-level">
+									<li class="app-order-second-level-list">
+										<p>Le commodo | 9,99$</p>
+										<p> Quantite : 1</p>
+									</li>
+									<li class="app-order-second-level-list">
+										<p>Le commodo | 9,99$</p>
+										<p> Quantite : 1</p>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Partie detail de commande -->
+					<aside>
+						<h3 class="app-order-aside-title">Detail</h3>
+						<ul class="app-order-aside ">
+							<li class="app-order-aside-list">
+								<strong>Sous-total:</strong>
+								<p> 29,96$</p>
+							</li>
+							<li class="app-order-second-level-list">
+								<strong>Taxes:</strong>
+								<p> 4,49$</p>
+							</li>
+							<li class="app-order-aside-list">
+								<strong>Total:</strong>
+								<p> 34,45$</p>
+							</li>
+							<li><a class="app-order-aside-btn" href="#">Commander</a></li>
+						</ul>
+					</aside>
+				</article>
+			</div>
+		</section>
+
+		<!-- Section t-shirt Burger Shop-->
+		<section id="app-shop-section">
+			<div class="container">
+				<div class="app-shop-element-section">
+					<div class="app-shop-element-text">
+						<h2>Le t-shirt Burger Shop</h2>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+							voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+							cupiditate non provident.</p>
+						<a href="#">Ajouter au panier</a>
+					</div>
+					<img src="img/t-shirt.png" alt="">
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Section pied de page -->
+	<footer>
+		<div class="container">
+			<div class="app-footer-burger-shop">
+				<p>
+					<strong>Burger Shop</strong> : 1660 Boul. de l'Entente, Québec
+				</p>
+				<a class="app-link-btn-contact-us" href="tel:5149290107">
+					(514) 899 0107
+				</a>
+			</div>
+		</div>
+		<div class="app-footer">
+			<p>Réalisé par : <strong>Sana Ghariani</strong> | Dans le cadre de AEC en développement web front-end - Cégep de Trois-Riviere</p>
+		</div>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Reservation - Restaurant Burger shop </title>
+
+	<meta name="description" content="TP3 - Page de reservation du site restaurant Burger Shop">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="favicon.ico">
+
+	
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	 <!-- Section entête -->
+	<header>
+        <div class="container">
+            <!-- Logo enterprise -->
+            <div class="app-header-position">
+                <a href="index.html">
+               
+                    <img class="app-logo" src="img/logo-burger-shop.png" alt="Logo restaurant Burger Shop">
+				</a>
+                <!-- Menu navigation -->
+                <nav id="app-main-nav">
+                    <ul>
+                        <li><a href="index.html">Menu</a></li>
+                        <li class="app-menu-selection"><a href="reservation.html">Réservation</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li><a class="app-header-btn" href="ma-commande.html">Ma commande</a></li>
+                    </ul>
+                </nav>
+                <img class="app-icon-menu" src="img/icon-menu.png" alt="Icone de menu">
+            </div>
+        </div>
+    </header>
+
+	<main>
+		<!-- Section de reservation : formulaire -->
+		<section id="app-reservation-page">
+			<div class="container">
+				<h2>Réservation</h2>
+				<form method="POST" action="message-confirmation-reservation.html" id="app-form-reservation">
+					<div class="app-form-reservation-bloc">
+					
+						<!-- Partie : info perso -->
+						<fieldset>
+							<legend>Vos informations personnelles</legend>
+
+							<label for="txtNom">Nom <span>*</span> : </label>
+							<input type="text" id="txtNom" name="txtNom" required autofocus>
+
+							<label for="txtPrnom">Prenom <span>*</span> : </label>
+							<input type="text" id="txtPrnom" name="txtPrnom" required>
+
+							<label for="telNum">Telephone <span>*</span> : </label>
+							<input type="tel" id="telNum" name="telNum" required>
+
+							<label for="email">Courriel : </label>
+							<input type="text" id="email" name="email" placeholder="xyz@mail.com">
+						</fieldset>
+
+						<!-- Partie : reservation -->
+						<fieldset>
+							<legend>Votre reservation</legend>
+
+							<label for="numPers">Nombre de personne <span>*</span> : </label>
+							<input class="app-form-reservation-number" type="number" id="numPers" name="numPers"
+								required>
+
+							<div class="app-form-reservation-bloc-date">
+								<label for="dateResa">Date <span>*</span> : </label>
+								<input class="app-form-reservation-date" type="date" id="dateResa" name="dateResa" required>
+
+								<p>Heure <span>*</span> : </p>
+								<select name="selHeure" required>
+									<option value="">Choisir horaire</option>
+									<option value="12:00" selected>12:00</option>
+									<option value="2:30">12:30</option>
+									<option value="13:00">13:00</option>
+									<option value="13:30">13:30</option>
+									<option value="17:00">17:00</option>
+									<option value="17:30">17:30</option>
+									<option value="18:00">18:00</option>
+									<option value="18:30">18:30</option>
+									<option value="19:00">19:00</option>
+									<option value="19:30">19:30</option>
+									<option value="20:00">20:00</option>
+									<option value="20:30">20:30</option>
+									<option value="21:00">21:00</option>
+								</select>
+							</div>
+
+							<div>
+								<p> Choisir votre table <span>*</span> : </p>
+								<div>
+									<input class="app-form-reservation-radio" type="radio" id="resaSalmnge"
+										name="choixResa" value="sallamang" checked>
+									<label for="resaSalmnge">Salle a manger</label>
+								</div>
+								<div>
+									<input class="app-form-reservation-radio" type="radio" id="resaTerr"
+										name="choixResa" value="terr">
+									<label for="resaTerr">Terrasse</label>
+								</div>
+							</div>
+
+							<div>
+								<p>Commentaire : </p>
+								<textarea name="txtComnt" maxlength="50" rows="4" cols="50"> </textarea>
+							</div>
+						</fieldset>
+
+						<!-- Partie : bas de formulaire -->
+						<div class="app-form-reservation-bloc-footer">
+							<div class="app-form-checkbox">
+								<input type="checkbox" id="ckbInfoltre" name="ckbInfoltre">
+								<label for="ckbInfoltre">Je souhaite m'inscrire pour recevoir les infolettres.</label>
+							</div>
+
+							<div>
+								<label for="subConf"></label>
+								<input class="app-form-submit" type="submit" value="Confirmer" id="subConf"
+									name="subConf">
+							</div>
+							<p><span>*</span>champs obligatoir</p>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<!-- Section pied de page -->
+	<footer>
+        <div class="container">
+            <div class="app-footer-burger-shop">
+                <p>
+                    <strong>Burger Shop</strong> : 1660 Boul. de l'Entente, Québec
+                </p>
+                <a class="app-link-btn-contact-us" href="tel:5149290107">
+                    (514) 899 0107
+                </a>
+            </div>
+        </div>
+        <div class="app-footer">
+            <p>
+                Réalisé par : <strong>Sana Ghariani</strong> | Dans le cadre de AEC en développement web front-end - Cégep de Trois-Riviere
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
